@@ -1,0 +1,5 @@
+['hostname'] = 'localhost';
+['username'] = 'root';
+['password'] = 'Sistemas2018@$';
+['database'] = 'test';
+['dbdriver'] = 'mysql';
