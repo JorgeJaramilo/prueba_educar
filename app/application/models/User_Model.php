@@ -25,7 +25,7 @@ class User_Model extends CI_Model
 
 
     public function getUsuario($id){
-    $consulta = $this->db->query('select * from users where id ='.$id);
+    $consulta = $this->db->query('SELECT * FROM users u INNER JOIN movimiento m ON u.id=m.`id_usu` INNER JOIN tipo_movimiento t ON m.`tipo_mov` = t.`id_movi`  WHERE id ='.$id);
     return $consulta->result();
     }
 
